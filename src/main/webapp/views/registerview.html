@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      padding-top: 5rem;
+    background-image: url('../images/ticket.jpg');
+   background-repeat: no;
+      background-size: 3000px;
+    }
+    .form-signin {
+      max-width: 330px;
+      padding: 15px;
+      margin: 0 auto;
+    }
+    .form-signin .form-floating:focus-within {
+      z-index: 2;
+    }
+    .form-signin input[type="email"],
+    .form-signin input[type="password"],
+    .form-signin input[type="text"],
+    .form-signin input[type="tel"] {
+      margin-bottom: -1px;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    .form-signin input[type="email"]:focus,
+    .form-signin input[type="password"]:focus,
+    .form-signin input[type="text"]:focus,
+    .form-signin input[type="tel"]:focus {
+      z-index: 3;
+    }
+    .form-signin .form-floating {
+      position: relative;
+      margin-bottom: 10px;
+    }
+    .form-signin .form-floating input {
+      height: auto;
+      padding: 10px;
+    }
+    .form-signin button {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body class="text-center">
+<main class="form-signin">
+  <form action="../RegisterServlet" method="post">
+  <div class="border rounded p-4 bg-white" style="width: 400px;">
+    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+    <div class="form-floating">
+      <input type="text" class="form-control" name="username" id="username" placeholder="Username">
+      <label for="username">Username</label>
+    </div>
+    <div class="form-floating">
+      <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+      <label for="email">Email address</label>
+    </div>
+    <div class="form-floating">
+      <input type="tel" class="form-control" name="phone" id="phone" placeholder="Phone number">
+      <label for="phone">Phone number</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+      <label for="password">Password</label>
+    </div>
+    <button class="w-100 btn btn-lg btn-primary" type="submit" >Sign up</button>
+    <p class="mt-5 mb-3 text-muted"><b>Already have an account? </b><a href="loginview.html">Login</a></p>
+  </form>
+</main>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
